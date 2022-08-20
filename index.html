@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="board">
+        <div id='player_1'>
+            <figure>
+                <img src="./img/knight.png">
+            </figure>
+            <div class='lifePoint'>
+                <h2></h2>
+            </div>
+            <div class='life'>
+                <div class='color'></div>
+            </div>
+            <div class='currentWeapon'>
+                <img>
+                <h2></h2>
+            </div>
+        </div>
+
+        <div id="game">
+            <canvas id="canvas" width="800" height="800" style="background : url('./img/game.jpg')"></canvas>
+            <div id="arena">
+                <div id="fight">
+                    <div class='fighters'>
+                        <img src="./img/currentplayer.png" class='currentplayer_1'>
+                        <img src="./img/knight.png" class='fighter_1'>
+                    </div>
+                    <div class='fighters'>
+                        <img src="./img/currentplayer.png" class='currentplayer_2'>
+                        <img src="./img/warrior.png" class='fighter_2'>
+                    </div>
+                </div>
+            </div>
+            <div id="end">
+                <div id="victory">
+                    <img>
+                    <h2></h2>
+                    <button class="refresh" type="button" onClick="history.go(0)">Recommencer la partie</button>
+                </div>
+            </div>
+            <div id="action">
+                <button class="attack" type="button">Attack</button>
+                <button class="defend" type="button">Defend</button>
+            </div>
+
+        </div>
+
+        <div id='player_2'>
+            <figure>
+                <img src="./img/warrior.png">
+            </figure>
+            <div class='lifePoint'>
+                <h2></h2>
+            </div>
+            <div class='life'>
+                <div class='color'></div>
+            </div>
+            <div class='currentWeapon'>
+                <img>
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="map.js"></script>
+    <script src="obstacle.js"></script>
+    <script src="weapons.js"></script>
+    <script src="players.js"></script>
+    <script src="fight.js"></script>
+    <script src="shifting.js"></script>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

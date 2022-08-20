@@ -1,0 +1,130 @@
+body{
+    background-image: url(./img/background.jpg);
+}
+
+canvas{
+    margin: 10% 0 0 0;
+    box-shadow: 0px 0px 30px -2px rgba(0,0,0,0.75);
+    border: 4px solid;
+}
+
+button{
+    width: 150px;
+    height: 60px;
+    background-color :#bd96899e;
+
+}
+
+#action{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin: 10px;
+ 
+}
+
+#board{
+    margin : 0 18% 0 18%; 
+    display: flex;
+    flex-direction: row;
+}
+#player_1, #player_2{
+    display: flex;
+    flex-direction:column;
+}
+
+#player_1 img , #player_2 img{
+    height: 100px;
+}
+
+#player_1 .life, #player_2 .life{
+    width: 100px;
+    height: 15px;
+    border-radius: 10%;
+    border: 2px solid;
+    margin : 0 auto;
+}
+
+#player_1 .color, #player_2 .color{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(206, 82, 78);
+}
+
+.currentWeapon{
+    margin-top: 45px;
+}
+
+#player_1 .currentWeapon img, #player_2 .currentWeapon img{
+   height: 80px;
+   display : block;
+   margin : 0 auto;
+}
+
+#player_1 h2, #player_2 h2 {
+    text-align: center;
+  }
+#arena{
+    position: absolute;
+    top : 90px;
+  }
+
+#fight{
+    width: 800px;
+    height:800px;
+    background-image : url('./img/battle.jpg');
+    background-size: 800px 800px;
+    border: 4px solid;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.fighters{
+    margin-top : 65%;
+    margin-left : 26%;
+    display : flex;
+    flex-direction: column;
+}
+
+ .fighter_1, .fighter_2{
+    width:80px;
+    height:80px;
+}
+
+.currentplayer_1 , .currentplayer_2 {
+    margin-left: 5px;
+    width:50px;
+    height:50px;
+}
+
+#end{
+    position: absolute;
+    top : 90px;
+
+}
+#victory{
+    width: 800px;
+    height:800px;
+
+    background-image : url('./img/game.jpg');
+    background-size:cover;
+    border: 4px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+#victory img{
+    width: 200px;
+    margin: 0 auto;
+    margin-top:30px;
+}
+
+#victory h2{
+    text-align: center;
+    font-size:45px;
+}
+
+.refresh{
+    margin : 0 auto;
+}
